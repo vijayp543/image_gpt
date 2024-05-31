@@ -3,22 +3,22 @@ import ReactDOM from 'react-dom/client';
 import { useRef, useState } from 'react';
 
 const Bot = () => {
-    const [name, setName] = useState("flowers")
-    const [img, setImg] = useState('https://source.unsplash.com/1600x800?flowers')
+    const [name, setName] = useState("Car")
+    const [img, setImg] = useState('https://source.unsplash.com/1600x800?car')
     const data = useRef()
-    
+
     const first = "https://source.unsplash.com/1600x800?"
     function image() {
         // console.log("image generating .....")
-        console.log(first+data.current.value)
-        setImg(first+data.current.value)
+        console.log(first + data.current.value)
+        setImg(first + data.current.value)
         setName(data.current.value)
     }
 
     return <div className='bot-container'>
         <div className='left-container'>
 
-            <div className='left-containe-content'>
+            <div className='left-container-content'>
                 <h1>JHC Bot</h1>
                 <button className='new-btn'>+ New</button>
             </div>
